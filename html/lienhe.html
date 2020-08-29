@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input').focus(function(){
+                $(this).css("background-color","rgb(197, 195, 195)");
+            });
+            $('input').blur(function(){
+                $(this).css("background-color","rgb(231, 225, 225)");
+            });
+        })
+    </script>
+        <script>
+            var images = [new Image(), new Image()];
+    
+            $(document).ready(function(){
+                images[0].src = '../style/images/About DN.jpg';
+                images[1].src = '../style/images/7.jpg';
+    
+                $("#target").on('mouseover',function(){
+                    $('#target').attr('src', images[1].src);
+                });
+                $("#target").on('mouseout',function(){
+                    $('#target').attr('src', images[0].src);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('#submit').click(function(){
+                    alert('Cảm Ơn Bạn Đã Liên Hệ Với Chúng Tôi. Chúng Tôi Sẽ Sớm Phản Hồi Thư Của Bạn')
+                })
+            });
+        </script>
+    <style>
+    body{
+    width: 100%;
+    font-size: 25px;
+    }
+    form{
+        color: black;
+        margin-left: 500px;
+        margin-top: 70px;
+    }
+    .slide{
+    width: 100%;
+    height: 550px;
+    }
+    .slide img{
+        width: 90%;
+        height: 500px;
+        margin: 0 70px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    td input {
+        width: 99%;
+        height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://www.giaoduc.edu.vn/upload/images/2011/12/27/hoa-sen-la-bieu-tuong-moi-cua-nganh-du-lich-viet-nam_11.jpg" >
+        <a href="../index.html">TRANG CHỦ</a>
+        <a href="#">THUÊ XE</a>
+        <a href="#">TOUR</a>
+        <a href="#">GIỚI THIỆU</a>
+        <a href="#">LIÊN HỆ</a>
+    </nav>
+    <div class="slide">
+        <img src="../style/images/About DN.jpg" id="target">
+        </div>
+        <article>
+            <form action="">
+                <table cellpadding="0" cellspacing="0" border="1" style="width: 500px;">
+                    <tr>
+                        <td>
+                            UserName:
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email:
+                        </td>
+                        <td>
+                            <input type="email  " name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Telephone:
+                        </td>
+                        <td>
+                            <input type="number" name="" id="">
+                        </td>
+                    </tr>
+                    <tr style="height:100px">
+                        <td>
+                            Message
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" height="100px">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Gửi" id="submit">
+            </form>
+        </article>  
+        <footer style="font-size: 15px;">
+            <div style=" width : 40%;margin-left:100px; float: left;" >
+               <h3 style="color: rgb(252, 88, 115);">Công Ty Du Lịch DC Việt Nam</h3> 
+               <b>
+                Tên chính thức : CÔNG TY DU LỊCH MỘT THÀNH VIÊN DC<BR/>
+                Tên giao dịch đối ngoại: VIET MEDIA TRAVEL CORPORATION<BR/>
+                Tên giao dịch viết tắt: DC VIETNAM TRAVEL<BR/>
+                Hình thức sở hữu:  Cổ phần; Thành lập: Ngày 10/7/2030<BR/>
+                Người đại diện: Hồ Văn Đức Chung – Chủ tịch HĐQT kiêm Tổng giám đốc<BR/>
+                </b>
+            </div>
+            <div style="float: right;width: 40%;"> 
+                <h3 style="color: rgb(252, 88, 115);">Liên Hệ Với Chúng Tôi</h3>
+               <b>
+                Tel  (71 4) 775 - 9999  ; Cell: (71 4) 713 – 1524<BR/>
+                Email: Chunghvdpd02996.com.vn<BR/>
+                TRỤ SỞ: 79 NGUYỄN VĂN LINH - THANH KHÊ - ĐÀ NẴNG<BR/>
+                CHI NHÁNH HÀ NỘI: 79-HOÀNG KIẾM -HÀ NỘI<br>
+                </b>
+                <img src="https://www.pngkit.com/png/full/7-78109_icons-icons-facebook-facebook-icon-png-and-psd.png" width="100px" height="50px">
+                
+            </div>
+        </footer>
+</body>
+</html>

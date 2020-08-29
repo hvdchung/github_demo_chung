@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#driver').click(function(){
+                $('#stage').load('../html/gioithieuload.html');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 style="color: rgb(252, 88, 115);">Công Ty Du Lịch DC Việt Nam</h1> 
+    <b>
+        Tên chính thức : CÔNG TY DU LỊCH MỘT THÀNH VIÊN DC<BR/>
+        Tên giao dịch đối ngoại: VIET MEDIA TRAVEL CORPORATION<BR/>
+        Tên giao dịch viết tắt: DC VIETNAM TRAVEL<BR/>
+        Hình thức sở hữu:  Cổ phần; Thành lập: Ngày 10/7/2030<BR/>
+        Người đại diện: Hồ Văn Đức Chung – Chủ tịch HĐQT kiêm Tổng giám đốc<BR/>
+    </b>
+    <h1>
+        Liên Hệ Với Chúng Tôi
+    </h1>
+    <b>
+        Tel (71 4) 775 - 9999 ; Cell: (71 4) 713 – 1524<br/>
+        Email: Chunghvdpd02996.com.vn<br/>
+        Hoặc Trực Tiếp Đến Các Chi Nhánh trên Toàn Quốc    
+    </b>
+    <br/>   
+
+    <!-- nút load -->
+    <input type="button" id="driver" value="CHI NHÁNH">
+    <div id="stage" style="border: 1px black">
+    </div>
+</body>
+</html>

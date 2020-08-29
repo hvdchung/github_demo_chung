@@ -1,0 +1,167 @@
+/* Global Styling */
+html, body {margin:0px; padding: 0px;}
+
+nav {
+    background-color: #34495e;
+    height: 80px;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	z-index: 999;
+}
+
+#logo {height: 80px; margin-left: 20px;}
+
+.wrapper {
+    width: auto;
+    padding: 50px 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent {
+    width: 25%;
+    margin: 20px;
+    height: 330px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.child {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s ;
+}
+.title{
+    width: 100%;
+    height: 10%;
+}
+.price{
+    width: 100%;
+    height: 20%;
+    background-color:whitesmoke;
+}
+.child img {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.05);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+		.wrapper {padding: 20px 20px;}
+}
+.hello {display: none}
+.slide{
+    width: 100%;
+    height: 550px;
+}
+.slide img{
+    width: 90%;
+    height: 500px;
+    margin: 0 70px;
+    border-radius: 5px 5px 5px 5px;
+}
+.table{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+.sale{
+    width: 10%;
+    height: 100%;
+    margin: 0 50px;
+    border: 1px solid rgb(236, 149, 35);
+    background-color:  navajowhite;
+    background-image: url(../images/Hoian_logo.png);
+    background-size: 100% 100%;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+.sale1{
+    width: 10%;
+    height: 100%;
+    margin: 0 50px;
+    border: 1px solid rgb(236, 149, 35);
+    background-color:  navajowhite;
+    background-image: url(../images/vietnam.jpg);
+    background-size: 100% 100%;
+    border-radius: 15px 15px 15px 15px;
+
+}
+.sale2{
+    width: 10%;
+    height: 100%;
+    margin: 0 50px;
+    background-color: navajowhite;
+    border: 1px solid rgb(236, 149, 35);
+    background-image: url(../images/KOREA.png);
+    background-size: 100% 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+.sale3{
+    width: 10%;
+    height: 100%;
+    margin: 0 50px;
+    background-color: navajowhite;
+    border: 1px solid rgb(236, 149, 35);
+    background-image: url(../images/hanoi.png);
+    background-size: 100% 100%;
+    border-radius: 15px 15px 15px 15px;
+}
